@@ -202,6 +202,10 @@ body {
   line-height: 1.8;
 }
 
+body.nav-active {
+  overflow: hidden;
+}
+
 /*-----------------------------------*\
   #REUSED STYLE
 \*-----------------------------------*/
@@ -313,10 +317,7 @@ body {
   #HEADER
 \*-----------------------------------*/
 
-.overlay {
-  display: none;
-  background-color: white;
-}
+
 
 .header .container {
   display: flex;
@@ -438,6 +439,23 @@ body {
 
 .logo-btn:is(:hover, :focus-visible) {
   opacity: 0.8;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #000;
+  opacity: 0;
+  visibility: hidden;
+  transition: var(--transition-1);
+}
+
+.overlay.active {
+  visibility: visible;
+  opacity: 0.3;
 }
 
 
