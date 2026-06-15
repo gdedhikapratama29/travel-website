@@ -289,6 +289,16 @@ body.nav-active {
   width: 100%;
 }
 
+.section-subtitle {
+  color: var(--text-majorelle-blue);
+  font-weight: var(--weight-medium);
+  text-transform: uppercase;
+}
+
+.section-title {
+  margin-block: 10px;
+}
+
 
 /*-----------------------------------*\
   #PRELOADER
@@ -578,6 +588,28 @@ body.nav-active {
 /*-----------------------------------*\
   #SERVICE
 \*-----------------------------------*/
+
+.service .container {
+  display: grid;
+  gap: 25px;
+}
+
+.service-card:nth-child(2) {
+  background-color: var(--bg-section);
+}
+
+.service-card:nth-child(4) {
+  background-color: var(--bg-section);
+}
+
+.service-card {
+  padding: 25px 20px;
+  border-radius: var(--radius-20);
+}
+
+.service-card .card-title {
+  margin-block: 10px 5px;
+}
 
 
 
