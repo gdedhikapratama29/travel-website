@@ -622,7 +622,6 @@ body.nav-active {
 /*-----------------------------------*\
   #DESTINATION
 \*-----------------------------------*/
-
 .desti .section-title {
   margin-block-end: 40px;
 }
@@ -637,7 +636,7 @@ body.nav-active {
   border-radius: var(--radius-30);
 }
 
-.desti-card:is(:hover, :focus-within) .img-cover {
+.desti-card:is(:hover, :focus-visible) .img-cover {
   transform: scale(1.05);
 }
 
@@ -645,7 +644,7 @@ body.nav-active {
   position: absolute;
   top: 20px;
   right: 20px;
-  background-color: #fff;
+  background-color: var(--bg-main);
   color: green;
   font-weight: var(--weight-bold);
   font-size: 1.8rem;
@@ -668,8 +667,13 @@ body.nav-active {
   align-items: center;
 }
 
+.desti-card .card-rating {
+  margin-block-start: 10px;
+  gap: 10px;
+}
+
 .desti-card .card-rating .span {
-  background-color: #ddd;
+  background-color: var(--bg-card);
   gap: 5px;
   padding: 4px 12px;
   border-radius: var(--radius-pill);
@@ -681,7 +685,7 @@ body.nav-active {
 
 .desti .btn {
   margin-inline: auto;
-  margin-inline-start: 40px;
+  margin-block-start: 40px;
 }
 
 
