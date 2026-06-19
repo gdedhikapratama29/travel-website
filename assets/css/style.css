@@ -23,7 +23,7 @@
   /* backgroud colors */
 
   /* Background */
---bg-main: hsla(240, 33%, 97%, 0.89);
+--bg-main: hsla(240, 33%, 97%, 0.877);
 --bg-section: hsla(251, 35%, 94%, 0.696);
 --bg-card: hsl(0, 0%, 100%);
 
@@ -692,8 +692,26 @@ body.nav-active {
 /*-----------------------------------*\
   #EXPERIENCE
 \*-----------------------------------*/
+.exp .container {
+  display: grid;
+  gap: 50px;
+    
+}
 
+.exp-banner {
+  position: relative;
+}
 
+.exp .section-text {
+  margin-block-end: 20px;
+}
+
+.exp-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-block-start: 15px;
+}
 
 
 
