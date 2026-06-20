@@ -713,6 +713,19 @@ body.nav-active {
   margin-block-start: 15px;
 }
 
+.exp-item .item-title {
+  color: var(--text-majorelle-blue);
+  font-size: 3.6rem;
+  font-weight: var(--weight-bold);
+}
+
+.exp-shape {
+  position: absolute;
+  top: 50%;
+  left: -10px;
+  width: 25%;
+  filter: drop-shadow(var(--shadow-4));
+}
 
 
 /*-----------------------------------*\
